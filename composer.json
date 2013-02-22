@@ -1,0 +1,19 @@
+{
+	
+	"name": "lewisbaker/silex-pheanstalk",
+    "type": "library",
+    "description": "Pheanstalk Service Provider for the Silex PHP Microframework",
+    "keywords": ["pheanstalk","silex", "php","queue"],
+    
+    "require": {
+        "php": ">=5.3.0",
+        "pda/pheanstalk": "dev-master"
+    },
+    
+    "autoload": {
+        "psr-0": { "LewisB\\PheanstalkServiceProvider": "" }
+    },
+
+    "minimum-stability": "dev"
+
+}
