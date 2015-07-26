@@ -8,15 +8,15 @@ class PheanstalkServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {
-        $app['pheanstalk'] = $app->share(function ($app) {    
+        $app['pheanstalk'] = $app->share(function ($app) {
 		   $server = isset($app['pheanstalk.server']) ? $app['pheanstalk.server'] : "127.0.0.1";
-           return new \Pheanstalk_Pheanstalk((string)$server);
+           return new \Pheanstalk\Pheanstalk((string)$server);
         });
-        
+
     }
 
     public function boot(Application $app)
     {
-    	
+
     }
 }
